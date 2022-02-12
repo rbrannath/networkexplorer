@@ -56,7 +56,8 @@ function plugin_init_networkexplorer()
 {
     global $PLUGIN_HOOKS;
  echo "vorher!";
-	     Plugin::registerClass(
+	try {
+	 Plugin::registerClass(
      'PluginNetworkexplorerExplorer', [
         'addtabon' => [
            'Computer',
@@ -64,6 +65,10 @@ function plugin_init_networkexplorer()
         ]
      ]
    );
+} catch (Exception $ex) {
+	echo $ex;
+}
+	    
 
  $PLUGIN_HOOKS['csrf_compliant']['networkexplorer'] = true;
 }
