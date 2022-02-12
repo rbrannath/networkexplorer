@@ -55,7 +55,7 @@ function plugin_networkexplorer_check_prerequisites() {
 function plugin_init_networkexplorer()
 {
     global $PLUGIN_HOOKS;
- 
+ echo "vorher!";
      Plugin::registerClass(
      'PluginNetworkExplorerExplorer', [
         'addtabon' => [
@@ -64,6 +64,6 @@ function plugin_init_networkexplorer()
         ]
      ]
    );
- 
+ echo "ist aufgerufen!";
  $PLUGIN_HOOKS['csrf_compliant']['networkexplorer'] = true;
 }
