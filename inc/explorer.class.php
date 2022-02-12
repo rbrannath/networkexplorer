@@ -1,6 +1,6 @@
 <?php
 
-class PluginNetworkExplorerExplorer extends CommonGLPI 
+class PluginNetworkExplorer extends CommonGLPI 
 {
      function __construct() {
         echo "In BaseClass constructor\n";
