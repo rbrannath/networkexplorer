@@ -7,7 +7,8 @@ class PluginNetworkExplorerExplorer extends CommonDBTM
      *  inside the left menu of a Itemtype.
      */
    function getTabNameForItem(CommonGLPI $item, $withtemplate = 0) {
-      return self::createTabEntry('Network Explorer');
+      //return self::createTabEntry('Network Explorer');
+      return __('My plugin', 'networkexplorerplugin');
    }
  
     /**
