@@ -3,21 +3,6 @@
 define('NETWORK_EXPLORER_VERSION', '0.0.1');
 
 /**
- * Init the hooks of the plugins - Needed
- *
- * @return void
- */
-function plugin_init_myexample() {
-   global $PLUGIN_HOOKS;
-
-   //required!
-   $PLUGIN_HOOKS['csrf_compliant']['networkexplorer'] = true;
-
-   //some code here, like call to Plugin::registerClass(), populating PLUGIN_HOOKS, ...
-}
-
-
-/**
  * Get the name and the version of the plugin - Needed
  */
 function plugin_version_networkexplorer() {
