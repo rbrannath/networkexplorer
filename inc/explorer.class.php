@@ -9,8 +9,7 @@ class PluginNetworkExplorerExplorer extends CommonDBTM
     function getTabNameForItem(CommonGLPI $item, $withtemplate=0)
     {
        echo "iscalledToo!";
-        // return self::createTabEntry('Network Explorer');
-        return 'Explorer';
+        return self::createTabEntry('Network Explorer');
     }
  
     /**
