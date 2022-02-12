@@ -23,7 +23,7 @@ function plugin_init_myexample() {
 function plugin_version_networkexplorer() {
    return [
       'name'           => 'Network Explorer',
-      'version'        => MYEXAMPLE_VERSION,
+      'version'        => NETWORK_EXPLORER_VERSION,
       'author'         => 'Roy Brannath',
       'license'        => 'GLPv3',
       'homepage'       => 'https://github.com/rbrannath/networkexplorer',
