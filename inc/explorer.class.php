@@ -6,11 +6,9 @@ class PluginNetworkExplorerExplorer extends CommonDBTM
      * This function is called from GLPI to allow the plugin to insert one or more item
      *  inside the left menu of a Itemtype.
      */
-    function getTabNameForItem(CommonGLPI $item, $withtemplate=0)
-    {
-       echo "iscalledToo!";
-        return self::createTabEntry('Network Explorer');
-    }
+   function getTabNameForItem(CommonGLPI $item, $withtemplate = 0) {
+      return self::createTabEntry('Network Explorer');
+   }
  
     /**
      * This function is called from GLPI to render the form when the user click
