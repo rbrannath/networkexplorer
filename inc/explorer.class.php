@@ -16,9 +16,13 @@ class PluginNetworkexplorerExplorer extends CommonDBTM
      */
     static function displayTabContentForItem(CommonGLPI $item, $tabnum=1, $withtemplate=0)
     {
-        ?>
-        <div>Explorer-Area</div>
-        <?php
+       
+        echo "<div>Explorer-Area</div>";
+        foreach ($DB->request('glpi_computers') as $id => $row) {
+          echo "<div>$row->name</div>
+          }
+
+        
         return true;
     }
 }
