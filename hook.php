@@ -1,4 +1,4 @@
-<?
+<?php
  
 /**
  * Called when user click on Install - Needed
