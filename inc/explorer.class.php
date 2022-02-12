@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
-class PluginNetworkExplorerExplorer extends CommonDBTM 
+class PluginNetworkExplorerExplorer extends CommonGLPI 
 {
      /**
      * This function is called from GLPI to allow the plugin to insert one or more item
