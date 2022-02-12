@@ -9,7 +9,7 @@ class PluginNetworkexplorerExplorer extends CommonGLPI
    function getTabNameForItem(CommonGLPI $item, $withtemplate = 0) {
       //return self::createTabEntry('Network Explorer');
       echo "should be called";
-      return __('My plugin', 'networkexplorerplugin');
+      return self::createTabEntry('Network Explorer');
    }
  
     /**
