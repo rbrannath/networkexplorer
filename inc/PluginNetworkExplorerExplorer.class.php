@@ -1,6 +1,6 @@
 <?php
  
-class PluginNetworkExplorerExplorer extends CommonGLPI
+class Explorer extends CommonGLPI
 {
      /**
      * This function is called from GLPI to allow the plugin to insert one or more item
