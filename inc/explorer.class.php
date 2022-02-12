@@ -20,7 +20,7 @@ class PluginNetworkexplorerExplorer extends CommonGLPI
     {
         ?>
         <div>Explorer-Area</div>
-        <?
+        <?php
         return true;
     }
 }
