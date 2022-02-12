@@ -25,8 +25,8 @@ function plugin_networkexplorer_check_config() {
 function plugin_networkexplorer_check_prerequisites() {
  
     // Check that the GLPI version is compatible
-    if (version_compare(GLPI_VERSION, '9.5', 'lt') || version_compare(GLPI_VERSION, '9.5', 'gt')) {
-        echo "This plugin Requires GLPI >= 9.5 and GLPI <9.5";
+    if (version_compare(GLPI_VERSION, '9.5', 'lt') || version_compare(GLPI_VERSION, '9.6', 'gt')) {
+        echo "This plugin Requires GLPI >= 9.5 and GLPI <9.6";
         return false;
     }
  
