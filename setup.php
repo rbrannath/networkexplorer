@@ -65,7 +65,9 @@ function plugin_init_networkexplorer()
         ]
      ]
    );
+		 echo "done!";
 } catch (Exception $ex) {
+		 echo "error!";
 	echo $ex;
 }
 	    
