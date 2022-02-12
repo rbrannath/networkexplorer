@@ -60,7 +60,7 @@ function plugin_init_networkexplorer()
      'PluginNetworkExplorerExplorer', [
         'addtabon' => [
            'Computer',
-           'Phone'
+           'Profile'
         ]
      ]
    );
