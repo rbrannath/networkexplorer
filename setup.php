@@ -1,4 +1,4 @@
-<?
+<? php
  
 define('NETWORK_EXPLORER_VERSION', '0.0.1');
 
