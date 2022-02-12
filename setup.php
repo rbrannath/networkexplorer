@@ -32,3 +32,16 @@ function plugin_networkexplorer_check_prerequisites() {
  
     return true;
 }
+
+/**
+ * Init the hooks of the plugins - Needed
+**/
+function plugin_init_networkexplorer()
+{
+    global $PLUGIN_HOOKS;
+ 
+    $PLUGIN_HOOKS['csrf_compliant']['networkexplorer'] = true;
+ 
+    Plugin::registerClass('PluginNetworkExplorer', array('addtabon' => array('Explorer')));
+ 
+}
