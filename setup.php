@@ -1,22 +1,56 @@
 <?
  
+define('NETWORK_EXPLORER_VERSION', '0.0.1');
+
+/**
+ * Init the hooks of the plugins - Needed
+ *
+ * @return void
+ */
+function plugin_init_myexample() {
+   global $PLUGIN_HOOKS;
+
+   //required!
+   $PLUGIN_HOOKS['csrf_compliant']['networkexplorer'] = true;
+
+   //some code here, like call to Plugin::registerClass(), populating PLUGIN_HOOKS, ...
+}
+
+
 /**
  * Get the name and the version of the plugin - Needed
  */
 function plugin_version_networkexplorer() {
-   return array('name'           => "Network Explorer",
-                'version'        => '0.0.1',
-                'author'         => 'Roy Brannath',
-                'license'        => 'GPLv3+',
-                'homepage'       => 'https://github.com/rbrannath/networkexplorer',
-                'minGlpiVersion' => '9.5');
+   return [
+      'name'           => 'Network Explorer',
+      'version'        => MYEXAMPLE_VERSION,
+      'author'         => 'Roy Brannath',
+      'license'        => 'GLPv3',
+      'homepage'       => 'https://github.com/rbrannath/networkexplorer',
+      'requirements'   => [
+         'glpi'   => [
+            'min' => '9.5',
+            'max' => '9.5'
+         ],
+         'php'    => [
+            'min' => '7.0'
+         ]
+      ]
+   ];
 }
 
 /**
  *  Check if the config is ok - Needed
  */
-function plugin_networkexplorer_check_config() {
-    return true;
+function plugin_networkexplorer_check_config($verbose = false) {
+   if (true) {
+      return true;
+   }
+
+   if ($verbose) {
+      echo "Installed, but not configured";
+   }
+   return false;
 }
  
 /**
