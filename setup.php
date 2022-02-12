@@ -76,6 +76,13 @@ function plugin_init_networkexplorer()
  
     $PLUGIN_HOOKS['csrf_compliant']['networkexplorer'] = true;
  
-    Plugin::registerClass('PluginNetworkExplorerExplorer', array('addtabon' => array('Computer')));
+   Plugin::registerClass(
+     'PluginNetworkExplorerExplorer', [
+        'addtabon' => [
+           'Computer',
+           'Phone'
+        ]
+     ]
+   );
  
 }
