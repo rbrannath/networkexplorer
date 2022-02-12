@@ -12,7 +12,7 @@ class PluginNetworkExplorerExplorer extends CommonGLPI
    switch ($item::getType()) {
       case Computer::getType():
       case Phone::getType():
-         return __('Tab from my plugin', 'myexampleplugin');
+         return __('Tab from my plugin', 'networkexplorerplugin');
          break;
    }
    return '';
