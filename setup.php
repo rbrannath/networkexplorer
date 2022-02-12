@@ -57,6 +57,7 @@ function plugin_init_networkexplorer()
     global $PLUGIN_HOOKS;
  echo "vorher!";
    try {
+	   echo $test;
 	     Plugin::registerClass(
      'PluginNetworkExplorerExplorer', [
         'addtabon' => [
