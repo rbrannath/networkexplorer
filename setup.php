@@ -30,7 +30,7 @@ function plugin_version_networkexplorer() {
       'requirements'   => [
          'glpi'   => [
             'min' => '9.5',
-            'max' => '9.5'
+            'max' => '9.6'
          ],
          'php'    => [
             'min' => '7.0'
