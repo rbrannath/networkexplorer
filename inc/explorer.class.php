@@ -18,7 +18,11 @@ class PluginNetworkexplorerExplorer extends CommonDBTM
     {
         global $DB;
         echo "<div>Explorer-Area</div>";
-        foreach ($DB->request('glpi_computers') as $id => $row) {
+         
+        $computers = $DB->request(['FROM'      => 'glpi_computers',
+              'LEFT JOIN' => ['glpi_computers_items' => ['FKEY' => ['glpi_computers'     => 'id',
+                                                                  'glpi_computers_items' => 'computer_id']]]]);
+        foreach ($computers as $id => $row) {
           //echo "<div>$row[name]</div>";
              print_r($row);
 
