@@ -11,6 +11,8 @@ class PluginNetworkExplorerExplorer extends CommonGLPI
         // return self::createTabEntry('Network Explorer');
    switch ($item::getType()) {
       case Computer::getType():
+         return __('Tab from my plugin2', 'networkexplorerplugin');
+         break;
       case Phone::getType():
          return __('Tab from my plugin', 'networkexplorerplugin');
          break;
