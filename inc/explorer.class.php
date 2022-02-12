@@ -2,9 +2,6 @@
 
 class PluginNetworkexplorerExplorer extends CommonGLPI 
 {
-     function __construct() {
-        echo "In BaseClass constructor\n";
-    }
      /**
      * This function is called from GLPI to allow the plugin to insert one or more item
      *  inside the left menu of a Itemtype.
